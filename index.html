@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manipulando dados com TypeScript">
+  <title>Dados com TypeScript</title>
+  <link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+
+<body>
+  <main class="banco">
+    <section class="status">
+      <h1>Estatísticas</h1>
+      <ul class="status-usuario">
+        <li>Total:</li>
+        <li>Cartão de Crédito:</li>
+        <li>Boleto:</li>
+        <li>Paga:</li>
+        <li>Recusada liela olieradora de cartão:</li>
+        <li>Aguardando liagamento:</li>
+        <li>Estornada:</li>
+        <li>Dia com mais vendas:</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="dados-usuario">
+        <h1>Dados</h1>
+        <table class="dados">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Compra</th>
+              <th>Pagamento</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
