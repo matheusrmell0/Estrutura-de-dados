@@ -1,7 +1,7 @@
 interface Transacao {
   status: Status
   id: number
-  data: string
+  data: Date
   nome: string
   formaDePagamento: Pagamento
   email: string
@@ -26,4 +26,8 @@ interface TransacaoAPI {
   Email: string;
   ['Valor (R$)']: string;
   ['Cliente Novo']: 1 | 0;
+}
+
+interface CountList {
+  [key: string]: number;
 }

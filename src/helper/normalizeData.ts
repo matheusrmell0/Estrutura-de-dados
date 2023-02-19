@@ -1,10 +1,11 @@
 import changeCoin from "./changeCoin";
+import dateFormat from "../helper/dateFormat"
 
 export default function normalizeData(data: TransacaoAPI): Transacao {
   return {
     status: data.Status,
     id: data.ID,
-    data: data.Data.replace('/', '.').replace('/', '.'),
+    data: dateFormat(data.Data),
     nome: data.Nome,
     formaDePagamento: data['Forma de Pagamento'],
     email: data.Email,
