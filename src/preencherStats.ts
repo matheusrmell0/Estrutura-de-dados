@@ -32,6 +32,9 @@ export default function preencherStats(state: Transacao[]): void {
           ${status
             .map((stat) => `<li>${stat}: ${data.status[stat]}</li>`)
             .slice(3, 4)}
+            <li>Dias com mais vendas: ${
+              data.bestDay[0]
+            }</li>
     `;
   }
 }

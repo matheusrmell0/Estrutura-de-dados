@@ -8,7 +8,8 @@ h1 {
 }
 
 .banco {
-  width: max-content;
+  min-width: fit-content;
+  max-width: 20.7cm;
   min-height: 29.7cm;
   padding: 2.5rem;
   margin: 1cm auto;
@@ -65,9 +66,9 @@ thead tr th {
 #tbody {
   font-size: 0.875rem;
 }
-#nome{
+#nome {
   font-weight: bold;
 }
 #tbody td {
-  padding: .875rem 1rem;
+  padding: 0.875rem 1rem;
 }
